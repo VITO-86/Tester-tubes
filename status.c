@@ -106,13 +106,18 @@ void SetRonde (status *s, IdxType i){
     (*s).ronde = i;
 }
 
+void startRonde(status *s){
+/* I.S. s terdefinisi, sembarang */
+/* F.S. permainan dimulai dari ronde 1*/
+    (*s).ronde = 1;
+}
+
 void NextRonde (status *s){
 /* I.S. s terdefinisi, sembarang */
 /* F.S. Permainan berlanjut ke ronde berikutnya */
     (*s).ronde += 1;
 
 }
-
 
 void UndoRonde (status *s){
 /* I.S. s terdefinisi, sembarang */
