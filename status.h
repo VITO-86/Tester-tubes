@@ -83,6 +83,10 @@ void SetRonde (status *s, IdxType i);
 /* F.S. Nilai berupa ronde i yang sedang berlangsung */
 /* Mengeset nilai ronde sehingga bernilai i */
 
+void startRonde(status *s);
+/* I.S. s terdefinisi, sembarang */
+/* F.S. permainan dimulai dari ronde 1*/
+
 void NextRonde (status *s);
 /* I.S. s terdefinisi, sembarang */
 /* F.S. Permainan berlanjut ke ronde berikutnya */
